@@ -291,23 +291,24 @@
 			\\
 			{do'' s4 do''}
 			\\
-			{do'4 do'\rest re'}
+			{\override Stem.direction = #DOWN do'4 do'\rest re'}
 		>>
 
 		%Battuta 27
 		<<
-			{sol'' re'' mi''}
+			{sol''4 re'' \once \override Stem.direction = #DOWN do'}
+
 			\\
-			{si'2 sib'4}
-			\\
-			{sol'2 do'4}
+
+
+			{<si' sol'>2 \once \override Stem.direction = #UP  <mi'' sib'>4}
 		>>
 	
 		%Battuta 28
 		<<
 			{fa''4 do'' re''}
 			\\
-			{<la' fa'>2 <la' fa'>4}
+			{ <la' fa'>2 <la' fa'>4}
 		>>
 		
 		\break
