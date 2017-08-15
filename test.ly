@@ -316,11 +316,13 @@
 
 		%Battuta 29
 		<<
-			{mi''4 si' dod''}
+
+
+			{mi''4 si' \once \override Stem.direction = #DOWN la}
+
 			\\
-			{sold'2 sol'4}
-			\\
-			{mi'2 la4}
+
+			{<sold' mi'>2 \once \override Stem.direction = #UP <dod'' sol'>4}
 		>>
 
 		%Battuta 30
@@ -334,12 +336,10 @@
 
 		%Battuta 31
 		<<
-			{do''4 re'' si'}
+			{do''4 \override Stem.direction = #DOWN fa sol }
 			\\
-			{mi' la' fa'}
-			\\
-			{la fa sol}		
-		>>
+			{<mi' la> \once \override Stem.direction = #UP <re'' la'> \once \override Stem.direction = #UP <si' fa'>}	
+		>> 
 
 		%Battuta 32
 		<<
