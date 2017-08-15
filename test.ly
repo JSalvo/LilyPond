@@ -168,7 +168,7 @@
 
 			\\
 
-			{\override Stem.direction = #DOWN  la2 dod'4}
+			{\override Stem.direction = #DOWN  la2 \once \override NoteColumn.force-hshift = 0 dod'4}
 
 		>>
 
@@ -177,28 +177,42 @@
 		<<
 			{\acciaccatura sol''8 fa''2 mi''4}
 			\\
-			{re''4 la' sol'}
+			{\once \override NoteColumn.force-hshift = 1 re''4 la' sol'}
 			\\
-			{re'2 mi'4}
+			{\once \override NoteColumn.force-hshift = 0 \override Stem.direction = #DOWN re'2 mi'4}
 		>>
 
 		%Battuta 15
 		<<
-			{re''4 la'' sol''}
+			{re''4 la''}
 			\\
-			{fa'8 la'~ la'4 dod''}
+			{fa'8 la'~ la'4}
 			\\
-			{fa'2 mi'4}
+			{fa'2}
 		>>
+		
+		<<
+			{<sol'' dod''>4}
+			\\
+			{mi'4}
+		>>
+
+
 
 		%Battuta 16
 		<< 
-			{\acciaccatura sol''8 fa''2  mi''4 }
+			{\acciaccatura sol''8 fa''2}
 
 			\\
-			{re''2 sib'4}
+			{\once \override Stem.transparent = ##t re''2}
 			\\
-			{\override Stem.direction = #DOWN re'4 la' sol'}
+			{\override Stem.direction = #DOWN \once \override NoteColumn.force-hshift = 0 re'4 la'}
+		>>
+
+		<<
+			{<mi'' sib'>4}
+			\\
+			{sol'4}
 		>>
 
 		\break
@@ -216,6 +230,9 @@
 			\\
 			{s4 fa' re'}
 		>>   
+
+	
+		
 
 		%Battuta 19
 		<<
