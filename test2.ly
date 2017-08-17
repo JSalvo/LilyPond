@@ -36,11 +36,8 @@ not_shift_stem_up = \once {\override Stem.direction = #UP \once \override NoteCo
 		\override DynamicLineSpanner.staff-padding = #8
 
 		
-		\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
-            #'((Y-offset . 60)
-               (alignment-distances . (10 10)))
+		\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (10 10)))
 
-	
 
 		%Battuta 1
 		<<	
@@ -56,8 +53,10 @@ not_shift_stem_up = \once {\override Stem.direction = #UP \once \override NoteCo
 			{s4 s4 s4 \once \override NoteColumn.force-hshift = 1.5 do''4 si'4 \once \override Stem.transparent = ##t dod''4}
 			
 			\\
+
+			\set fingeringOrientations = #'(left)  
 		
-	    		{\override Stem.direction = #DOWN do'-3 mi'-2 fa'-3  \override Stem.direction = #DOWN  sol'2 \once \override NoteColumn.force-hshift = 0  fa'8 mi'8}
+	    		{\override Stem.direction = #DOWN <do'-3> <mi'-2> <fa'-3>  \override Stem.direction = #DOWN  sol'2 \once \override NoteColumn.force-hshift = 0  fa'8 mi'8}
 
 			\\
 
@@ -105,6 +104,7 @@ not_shift_stem_up = \once {\override Stem.direction = #UP \once \override NoteCo
 
 		\break
 		
+		\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 40) (alignment-distances . (10 10)))
 
 		%Battuta 6
 		<<
@@ -172,6 +172,8 @@ not_shift_stem_up = \once {\override Stem.direction = #UP \once \override NoteCo
 		>>
 
 		\break
+
+		\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 60) (alignment-distances . (10 10)))		
 
 		%Battuta 11
 		<<
@@ -254,8 +256,12 @@ not_shift_stem_up = \once {\override Stem.direction = #UP \once \override NoteCo
 			\\
 			{sol'4}
 		>>
-
+		
 		\break
+
+		\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 80) (alignment-distances . (10 10)))
+		
+		
 
 		%Battuta 17
 		<<
@@ -320,6 +326,10 @@ not_shift_stem_up = \once {\override Stem.direction = #UP \once \override NoteCo
 
 		\break
 
+		\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 100) (alignment-distances . (10 10)))
+		
+		
+
 		%Battuta 23
 		<<
 			{<sol'' mi''>2.}
@@ -371,6 +381,9 @@ not_shift_stem_up = \once {\override Stem.direction = #UP \once \override NoteCo
 		>>
 		
 		\break
+
+		\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 120) (alignment-distances . (10 10)))
+		
 
 
 		%Battuta 29
@@ -429,6 +442,12 @@ not_shift_stem_up = \once {\override Stem.direction = #UP \once \override NoteCo
 			
 		\break
 
+
+
+		\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (10 10)))
+		
+		
+
 		%Battuta 35
 		<<
 			{fa''4 mi'' mi''~}
@@ -477,7 +496,6 @@ not_shift_stem_up = \once {\override Stem.direction = #UP \once \override NoteCo
 			\\
 			{s8 s8 s8\> s8\! s8 s8\p}
 		>>
-		
 
 	}
 
